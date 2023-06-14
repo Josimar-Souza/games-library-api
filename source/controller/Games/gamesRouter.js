@@ -3,6 +3,6 @@ const AddGame = require('./AddGame');
 
 const gamesRouter = express.Router({ mergeParams: true });
 
-gamesRouter.post('/game', AddGame);
+gamesRouter.post('/games', AddGame);
 
 module.exports = (rootRouter) => rootRouter.use(gamesRouter);
