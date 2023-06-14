@@ -6,12 +6,12 @@ dotenv.config();
 
 const { CATEGORIES_COLLECTION } = process.env;
 
-const GetCategoryByName = async (name) => {
+const GetCategoryByName = async (category) => {
   const db = await dbConnection();
 
-  const category = await db.collection(CATEGORIES_COLLECTION).findOne({ name });
+  const categoryFound = await db.collection(CATEGORIES_COLLECTION).findOne({ category });
 
-  return category;
+  return categoryFound;
 };
 
 module.exports = GetCategoryByName;
