@@ -1,0 +1,24 @@
+{
+  "name": "games-library-api",
+  "version": "1.0.0",
+  "description": "An API for a games library",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./source/server",
+    "start:dev": "nodemon ./source/server"
+  },
+  "author": "Josimar Souza",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "mongodb": "^5.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  }
+}
