@@ -1,12 +1,12 @@
 const JOI = require('joi');
 
 const addCategorySchema = JOI.object({
-  name: JOI.string().min(2).max(35).required()
+  category: JOI.string().min(2).max(35).required()
     .messages({
-      'any.required': 'O nome da categoria é necessário',
-      'string.empty': 'O nome não pode estar vazio',
-      'string.min': 'O nome deve ter no mínimo 2 caracteres',
-      'string.max': 'O nome deve ter no máximo 35 caracteres',
+      'any.required': 'A categoria é necessário',
+      'string.empty': 'A categoria não pode estar vazio',
+      'string.min': 'A categoria deve ter no mínimo 2 caracteres',
+      'string.max': 'A categoria deve ter no máximo 35 caracteres',
     }),
 });
 

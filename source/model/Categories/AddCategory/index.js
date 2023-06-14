@@ -14,9 +14,9 @@ const AddCategory = async (newCategory) => {
 
   const categoryAdded = {
     ...newCategory,
-    _id: ObjectId(id),
+    _id: new ObjectId(id),
   };
-
+  console.log(categoryAdded);
   return categoryAdded;
 };
 
