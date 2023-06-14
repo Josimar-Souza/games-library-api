@@ -14,7 +14,7 @@ const AddGame = async (newGame) => {
 
   const gameAdded = {
     ...newGame,
-    _id: ObjectId(id),
+    _id: new ObjectId(id),
   };
 
   return gameAdded;
