@@ -15,6 +15,7 @@ const GetGameById = async (req, res, next) => {
     }
   } catch (e) {
     next(e);
+    return false;
   }
 
   return res.status(StatusCodes.OK).json({ game });
