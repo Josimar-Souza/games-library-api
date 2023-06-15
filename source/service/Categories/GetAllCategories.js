@@ -7,7 +7,7 @@ const GetAllCategories = async () => {
   const games = await categoriesModel.GetAllCategories();
 
   if (games.length === 0) {
-    const error = new ErrorCreator('Custom Error', 'Nenhum jogo encontrado!', StatusCodes.NOT_FOUND);
+    const error = new ErrorCreator('Custom Error', 'Nenhuma categoria encontrada!', StatusCodes.NOT_FOUND);
 
     return error;
   }
