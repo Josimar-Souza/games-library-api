@@ -13,6 +13,8 @@ const AddGame = async (req, res, next) => {
     }
   } catch (e) {
     next(e);
+
+    return false;
   }
 
   return res.status(StatusCodes.CREATED).json({ gameAdded });

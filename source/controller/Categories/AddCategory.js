@@ -13,6 +13,8 @@ const AddCategory = async (req, res, next) => {
     }
   } catch (e) {
     next(e);
+
+    return false;
   }
 
   return res.status(StatusCodes.CREATED).json({ categoryAdded });
