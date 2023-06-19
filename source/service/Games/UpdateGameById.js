@@ -27,6 +27,12 @@ const UpdateGameById = async (id, newValues) => {
 
   const updatedGame = await gamesModel.UpdateGameById(id, newValues);
 
+  if (updatedGame.modifiedCount === 0) {
+    const error = new ErrorCreator('Custom Error', 'Não foi possível atualizar o jogo, por favor tente mais tarde!', StatusCodes.SERVICE_UNAVAILABLE);
+
+    return error;
+  }
+
   return updatedGame;
 };
 
