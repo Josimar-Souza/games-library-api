@@ -15,7 +15,7 @@ const DeleteGameById = async (id) => {
   const deletedStatus = await gamesModel.DeleteGameById(id);
 
   if (deletedStatus.deletedCount === 0) {
-    const error = new ErrorCreator('Custom Error', 'Não foi possível deletar esse jogo', StatusCodes.BAD_REQUEST);
+    const error = new ErrorCreator('Custom Error', 'Não foi possível deletar esse jogo', StatusCodes.SERVICE_UNAVAILABLE);
 
     return error;
   }

@@ -18,7 +18,7 @@ const UpdateGameById = async (req, res, next) => {
     return false;
   }
 
-  return res.status(StatusCodes.OK).json({ updatedGame });
+  return res.status(StatusCodes.NO_CONTENT).send();
 };
 
 module.exports = UpdateGameById;

@@ -17,7 +17,7 @@ const DeleteCategoryById = async (id) => {
   const gamesDeletedStatus = await gamesModel.DeleteGamesByCategory(categoryFound.category);
 
   if (categoryDeletedStatus.deletedCount === 0 && gamesDeletedStatus.deletedCount === 0) {
-    const error = new ErrorCreator('Custom error', 'Não foi possível deletar essa categoria!');
+    const error = new ErrorCreator('Custom error', 'Não foi possível deletar essa categoria!', StatusCodes.SERVICE_UNAVAILABLE);
 
     return error;
   }
