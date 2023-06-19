@@ -58,6 +58,10 @@
   <li><a href="https://nodemon.io/" target="_blank">Nodemon</a></li>
 </ul>
 
+<h1 id="deploy">Deploy</h1>
+<p>A api foi publicada no <a href="https://render.com/" target="_blank">Render</a> um serviço de hospedagem para static sites e web services.</p>
+<p>A api pode ser acessada por esse link <a href="https://games-library-api.onrender.com" target="_blank">Games Library API</a></p>
+
 <h1 id="endpoints">Endpoints</h1>
 <h2 id="add-category">Adicionar Categoria</h2>
 <h3>POST: /categories</h3>
