@@ -41,7 +41,7 @@
         <a href="#delete-game">Deletar um jogo</a>
       </li>
     </ul>
-    <li><a href="contacts">Contatos</a></li>
+    <li><a href="#contacts">Contatos</a></li>
 </ul>
 
 <h1 id="objectives">Objetivos</h1>
@@ -443,3 +443,8 @@
 </pre>
 <hr />
 <p>Status: 204 NO CONTENT</p>
+
+<h1 id="contacts">Contatos</h1>
+<a href="https://www.linkedin.com/in/josimar-souza-brito/" target="_blank">
+  <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" />
+</a>
