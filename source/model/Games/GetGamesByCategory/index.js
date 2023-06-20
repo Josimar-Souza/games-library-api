@@ -6,7 +6,7 @@ dotenv.config();
 
 const { GAMES_COLLECTION } = process.env;
 
-const GetGameByCategory = async (category) => {
+const GetGamesByCategory = async (category) => {
   const db = await dbConnection();
 
   const games = await db.collection(GAMES_COLLECTION).find({ category }).toArray();
@@ -14,4 +14,4 @@ const GetGameByCategory = async (category) => {
   return games;
 };
 
-module.exports = GetGameByCategory;
+module.exports = GetGamesByCategory;

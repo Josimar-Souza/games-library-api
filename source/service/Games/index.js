@@ -3,6 +3,7 @@ const UpdateGameById = require('./UpdateGameById');
 const GetGameById = require('./GetGameById');
 const GetAllGames = require('./GetAllGames');
 const DeleteGameById = require('./DeleteGameById');
+const GetGamesByCategory = require('./GetGamesByCategory');
 
 const gamesService = {
   AddGame,
@@ -10,6 +11,7 @@ const gamesService = {
   GetGameById,
   GetAllGames,
   DeleteGameById,
+  GetGamesByCategory,
 };
 
 module.exports = gamesService;
