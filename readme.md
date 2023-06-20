@@ -40,6 +40,9 @@
       <li>
         <a href="#delete-game">Deletar um jogo</a>
       </li>
+      <li>
+        <a href="#get-games-by-category">Buscar jogos pela sua categoria</a>
+      </li>
     </ul>
     <li><a href="#contacts">Contatos</a></li>
 </ul>
@@ -150,6 +153,9 @@
 <h3>DELETE: /categories/:id</h3>
 <hr />
 <p>Delete uma categoria pelo seu id</p>
+<hr />
+<h3><strong>NOTA:</strong></h3>
+<p>Ao deletar uma categoria todos os jogos daquela categoria também serão deletados, pois ficariam sem uma categoria atrelada, então tenha a ciência do que está fazendo.</p>
 <hr />
 <p>Exemplos de respostas</p>
 <p>Status: 500 Internal Server Error</p>
@@ -443,6 +449,58 @@
 </pre>
 <hr />
 <p>Status: 204 NO CONTENT</p>
+
+<hr />
+
+<h2 id="get-games-by-category">Buscar jogos pela sua categoria</h2>
+<h3>GET: /games/category/:category</h3>
+<hr/>
+<p>Lista jogos de uma categoria específica</p>
+<hr />
+<p>Exemplos de respostas</p>
+<p>Status: 500 Internal Server Error</p>
+<pre>
+  {
+    "message": "Internal server error"
+  }
+</pre>
+<hr />
+<p>Status: 404 NOT FOUND</p>
+<pre>
+  {
+    "message": "Nenhum jogo encontrado!"
+  }
+</pre>
+<hr />
+<p>Status: 200 OK</p>
+<pre>
+  {
+    "games": [
+      {
+        "_id": "Id do jogo",
+        "title": "O título do jogo",
+        "sinopse": "A sinopse do jogo",
+        "developer": "A desenvolvedora do jogo",
+        "publisher": "A publicadora do jogo",
+        "releaseYear": "O ano de lançamento do jogo",
+        "platforms": [
+          "Plataformas do jogo",
+        ],
+        "trailerURL": "A url do trailer do jogo",
+        "metacritic": {
+          "metascore": "A nota metascore do metacritic",
+          "userscore": "A nota userscore do metacritic",
+        },
+        "image": "A url da imagem do jogo",
+        "backdrop": "A url da imagem de backdrop do jogo",
+        "category": "A categoria do jogo"
+      }
+      ...
+    ]
+  }
+</pre>
+
+<hr />
 
 <h1 id="contacts">Contatos</h1>
 <a href="https://www.linkedin.com/in/josimar-souza-brito/" target="_blank">
