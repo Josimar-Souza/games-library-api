@@ -291,7 +291,6 @@
 <p>Exemplo de body;</p>
 <pre>
   {
-    "_id": "Id do jogo", | necessário
     "title": "O título do jogo", | necessário
     "sinopse": "A sinopse do jogo", | necessário
     "developer": "A desenvolvedora do jogo", | necessário
