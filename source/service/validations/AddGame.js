@@ -8,12 +8,12 @@ const addGameSchema = JOI.object({
       'string.min': 'Título deve ter no mínimo 2 caracteres',
       'string.max': 'Título deve ter no máximo 50 caracteres',
     }),
-  sinopse: JOI.string().min(5).max(650).required()
+  sinopse: JOI.string().min(5).max(2000).required()
     .messages({
       'any.required': 'Sinopse é necessária',
       'string.empty': 'Sinopse não pode estar vazio',
       'string.min': 'Sinopse deve ter no mínimo 5 caracteres',
-      'string.max': 'Sinopse deve ter no máximo 650 caracteres',
+      'string.max': 'Sinopse deve ter no máximo 2000 caracteres',
     }),
   developer: JOI.string().min(2).max(50).required()
     .messages({
