@@ -213,7 +213,7 @@
         "sinopse": "A sinopse do jogo",
         "developer": "A desenvolvedora do jogo",
         "publisher": "A publicadora do jogo",
-        "releaseYear": "O ano de lançamento do jogo",
+        "releaseDate": "O ano de lançamento do jogo",
         "platforms": [
           "Plataformas do jogo",
         ],
@@ -262,7 +262,7 @@
       "sinopse": "A sinopse do jogo",
       "developer": "A desenvolvedora do jogo",
       "publisher": "A publicadora do jogo",
-      "releaseYear": "O ano de lançamento do jogo",
+      "releaseDate": "O ano de lançamento do jogo",
       "platforms": [
         "Plataformas do jogo",
       ],
@@ -341,7 +341,7 @@
       "sinopse": "A sinopse do jogo",
       "developer": "A desenvolvedora do jogo",
       "publisher": "A publicadora do jogo",
-      "releaseYear": "O ano de lançamento do jogo",
+      "releaseDate": "O ano de lançamento do jogo",
       "platforms": [
         "Plataformas do jogo",
       ],
@@ -372,7 +372,7 @@
     "sinopse": "A sinopse do jogo", | opcional
     "developer": "A desenvolvedora do jogo", | opcional
     "publisher": "A publicadora do jogo", | opcional
-    "releaseYear": "O ano de lançamento do jogo", | opcional
+    "releaseDate": "O ano de lançamento do jogo", | opcional
     "platforms": [
       "Plataformas do jogo", | opcional
     ],
@@ -481,7 +481,7 @@
         "sinopse": "A sinopse do jogo",
         "developer": "A desenvolvedora do jogo",
         "publisher": "A publicadora do jogo",
-        "releaseYear": "O ano de lançamento do jogo",
+        "releaseDate": "O ano de lançamento do jogo",
         "platforms": [
           "Plataformas do jogo",
         ],
