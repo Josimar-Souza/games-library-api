@@ -29,12 +29,13 @@ const addGameSchema = JOI.object({
       'string.min': 'Publicadora deve ter no mínimo 2 caracteres',
       'string.max': 'Publicadora deve ter no máximo 50 caracteres',
     }),
-  releaseYear: JOI.string().length(10).regex(/^(\d){2}(\/)(\d){2}(\/)(\d){4}$/).required()
+  releaseDate: JOI.string().isoDate().required()
     .messages({
       'any.required': 'Ano de lançamento é necessário',
       'string.empty': 'Ano de lançamento não pode estar vazio',
       'string.length': 'Ano de lançamento deve ter 10 caracteres',
       'string.pattern.base': 'Ano de lançamento deve estar no formato "dd/mm/aaaa"',
+      'string.isoDate': 'A data precisa estar no formato iso',
     }),
   platforms: JOI.array().required().items(JOI.string().min(3).required()
     .messages({
