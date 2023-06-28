@@ -7,7 +7,7 @@ const addGameSchema = JOI.object({
       'string.min': 'Título deve ter no mínimo 2 caracteres',
       'string.max': 'Título deve ter no máximo 50 caracteres',
     }),
-  sinopse: JOI.string().min(5).max(650)
+  sinopse: JOI.string().min(5).max(2000)
     .messages({
       'string.empty': 'Sinopse não pode estar vazio',
       'string.min': 'Sinopse deve ter no mínimo 5 caracteres',
@@ -25,11 +25,12 @@ const addGameSchema = JOI.object({
       'string.min': 'Publicadora deve ter no mínimo 2 caracteres',
       'string.max': 'Publicadora deve ter no máximo 50 caracteres',
     }),
-  releaseYear: JOI.string().length(10).regex(/^(\d){2}(\/)(\d){2}(\/)(\d){4}$/)
+  releaseDate: JOI.string().isoDate()
     .messages({
       'string.empty': 'Ano de lançamento não pode estar vazio',
       'string.length': 'Ano de lançamento deve ter 10 caracteres',
       'string.pattern.base': 'Ano de lançamento deve estar no formato "dd/mm/aaaa"',
+      'string.isoDate': 'A data precisa estar no formato iso',
     }),
   platforms: JOI.array().items(JOI.string().min(3)
     .messages({
