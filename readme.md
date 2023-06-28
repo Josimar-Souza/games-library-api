@@ -295,7 +295,7 @@
     "sinopse": "A sinopse do jogo", | necessário
     "developer": "A desenvolvedora do jogo", | necessário
     "publisher": "A publicadora do jogo", | necessário
-    "releaseYear": "O ano de lançamento do jogo", | necessário
+    "releaseDate": "O ano de lançamento do jogo", | necessário
     "platforms": [
       "Plataformas do jogo", | necessário
     ],
