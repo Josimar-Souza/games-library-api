@@ -218,6 +218,7 @@
           "Plataformas do jogo",
         ],
         "trailerURL": "A url do trailer do jogo",
+        "themeURL": "A url do tema do jogo",
         "metacritic": {
           "metascore": "A nota metascore do metacritic",
           "userscore": "A nota userscore do metacritic",
@@ -267,6 +268,7 @@
         "Plataformas do jogo",
       ],
       "trailerURL": "A url do trailer do jogo",
+      "themeURL": "A url do tema do jogo",
       "metacritic": {
         "metascore": "A nota metascore do metacritic",
         "userscore": "A nota userscore do metacritic",
@@ -300,6 +302,7 @@
       "Plataformas do jogo", | necessário
     ],
     "trailerURL": "A url do trailer do jogo", | necessário
+    "themeURL": "A url do tema do jogo", | necessário
     "metacritic": {
       "metascore": "A nota metascore do metacritic", | necessário
       "userscore": "A nota userscore do metacritic", | necessário
@@ -346,6 +349,7 @@
         "Plataformas do jogo",
       ],
       "trailerURL": "A url do trailer do jogo",
+      "themeURL": "A url do tema do jogo",
       "metacritic": {
         "metascore": "A nota metascore do metacritic",
         "userscore": "A nota userscore do metacritic",
@@ -377,6 +381,7 @@
       "Plataformas do jogo", | opcional
     ],
     "trailerURL": "A url do trailer do jogo", | opcional
+    "themeURL": "A url do tema do jogo", | opcional
     "metacritic": {
       "metascore": "A nota metascore do metacritic", | opcional
       "userscore": "A nota userscore do metacritic", | opcional
@@ -486,6 +491,7 @@
           "Plataformas do jogo",
         ],
         "trailerURL": "A url do trailer do jogo",
+        "themeURL": "A url do tema do jogo",
         "metacritic": {
           "metascore": "A nota metascore do metacritic",
           "userscore": "A nota userscore do metacritic",
