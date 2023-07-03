@@ -42,6 +42,11 @@ const addGameSchema = JOI.object({
       'string.empty': 'A url do trailer não pode estar vazia',
       'string.uri': 'A url do trailer deve ser um link válido',
     }),
+  themeURL: JOI.string().uri()
+    .messages({
+      'string.empty': 'A url do tema não pode estar vazia',
+      'string.uri': 'A url do tema deve ser um link válido',
+    }),
   metacritic: JOI.object({
     metascore: JOI.number(),
     userscore: JOI.number(),
