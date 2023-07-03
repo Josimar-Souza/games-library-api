@@ -53,6 +53,7 @@ const addGameSchema = JOI.object({
     }),
   themeURL: JOI.string().uri().required()
     .messages({
+      'any.required': 'A url do tema é necessária',
       'string.empty': 'A url do tema não pode estar vazia',
       'string.uri': 'A url do tema deve ser um link válido',
     }),
